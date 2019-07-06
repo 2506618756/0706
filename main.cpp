@@ -131,4 +131,13 @@ int main()
     Matchoutput << left << setw(24)  << "学院";
     Matchoutput << left << setw(21)  << "姓名";
     Matchoutput << left << setw(16)   << "成绩" << endl;
+    for( int i=0; i<STUDENTNUMBER; i++ )
+    {
+        Matchoutput << left << setw(23) << i+1;
+        Matchoutput << left << setw(25) << student[i].ID;
+        Matchoutput << left << setw(24) << student[i].college;
+        Matchoutput << left << setw(22) << student[i].name;
+        Matchoutput << left << setw(12)  << floor(student[i].sum) << endl;
+    }
+    return 0;
 }
